@@ -7,6 +7,10 @@ import { CartComponent } from './cart/cart.component';
 import { SellerHomepageComponent } from './seller-homepage/seller-homepage.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { AuthGuard } from './guards/auth-guard.guard';
+import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
+import { UpdatesellerproductComponent } from './updatesellerproduct/updatesellerproduct.component';
+import { SearchComponent } from './search/search.component';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
 
 const routes: Routes = [
   {
@@ -31,6 +35,24 @@ const routes: Routes = [
     component:SellerHomepageComponent,
     path:"seller-home",
     canActivate : [AuthGuard]
+  },
+  {
+    component:SellerAddProductComponent,
+    path:"seller-add-product",
+    canActivate:[AuthGuard]
+  },
+  {
+    component:UpdatesellerproductComponent,
+    path:`seller-update-product/:id`,
+    canActivate:[AuthGuard]
+  },
+  {
+    component:SearchComponent,
+    path:`search/:query`
+  },
+  {
+    component:ProductdetailsComponent,
+    path: 'details/:productId'
   },
   //Error Handling page 404
   {

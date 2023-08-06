@@ -1,0 +1,12 @@
+table td {
+    height: 150px;
+}
+
+td img {
+    height: 120px;
+    width: 5vw;
+}
+
+button {
+    margin: 5px;
+}

@@ -7,64 +7,272 @@
       "id": 1
     },
     {
-      "name": "shivasaf",
-      "email": "daf",
-      "password": "adfadf",
-      "id": 2
-    },
-    {
-      "name": "kingkool",
-      "email": "king@test.com",
-      "password": "king@123",
-      "id": 3
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 4
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
+      "name": "SHIVAM",
+      "email": "shivam.sagar.shivam@gmail.com",
+      "password": "abc@123",
       "id": 5
     },
     {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 6
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
+      "name": "neeraj",
+      "email": "neeraj@test.com",
+      "password": "abc@123",
       "id": 7
     },
     {
-      "name": "Apples",
-      "email": "shivam.sagar.shivam@gmail.com",
-      "password": "daf",
+      "name": "Raju Rastogi ",
+      "email": "rajurastogi@restinpiece.com",
+      "password": "123456",
       "id": 8
     },
     {
-      "name": "Apples",
-      "email": "shivam.sagar.shivam@gmail.com",
-      "password": "daf",
+      "name": "kunnu",
+      "email": "kunnu@test.com",
+      "password": "abc@123",
+      "id": 9
+    }
+  ],
+  "product": [
+    {
+      "name": "iphone-12",
+      "price": "150000",
+      "category": "mobile",
+      "color": "black",
+      "image": "https://media.istockphoto.com/id/1318133723/photo/baby-care-accessories-and-bootees.jpg?s=612x612&w=0&k=20&c=5l5PpxJx6KzVsNJo0ZuIRtZjNuoGDC-7nsLa62qqMBI=",
+      "description": "Dynamic island notch with high performance gaming",
+      "id": 6
+    },
+    {
+      "name": "realme",
+      "price": "14501",
+      "category": "mobile",
+      "color": "black",
+      "image": "https://5.imimg.com/data5/PC/PM/MY-38900969/baby-party-wear-dress-500x500.jpg",
+      "description": "high performance gaming",
+      "id": 1
+    },
+    {
+      "name": "iphone-13",
+      "price": "15900",
+      "category": "mobile",
+      "color": "blue",
+      "image": "https://m.media-amazon.com/images/I/31YukDPC8fL._AC_UF894,1000_QL80_.jpg",
+      "description": "Dynamic island notch with high performance gaming",
+      "id": 4
+    },
+    {
+      "name": "iphone-14",
+      "price": "150000",
+      "category": "mobile",
+      "color": "white",
+      "image": "https://i.pinimg.com/736x/78/f2/f4/78f2f47aeca8a556865c43587fe364d9.jpg",
+      "description": "high performance gaming",
+      "id": 2
+    },
+    {
+      "name": "iphone-14",
+      "price": "12343",
+      "category": "mobile",
+      "color": "green",
+      "image": "https://images-cdn.ubuy.co.in/63bf6287e6b52a21a80dc8da-bmcitybm-baby-shoes-girl-boy-breathable.jpg",
+      "description": "high performance gaming",
+      "id": 3
+    },
+    {
+      "name": "iphone-11",
+      "price": "10000",
+      "category": "mobile",
+      "color": "green",
+      "image": "https://softsensbaby.com/cdn/shop/files/Website_Banner_Kit.jpg?v=1669009361",
+      "description": "Dynamic island notch with high performance gaming",
+      "id": 5
+    },
+    {
+      "name": "Product 1",
+      "price": 9.99,
+      "category": "Category 1",
+      "image": "image_url_1.jpg",
+      "colour": "Red",
+      "description": "Product 1 description.",
+      "id": 1
+    },
+    {
+      "name": "Product 2",
+      "price": 14.99,
+      "category": "Category 2",
+      "image": "image_url_2.jpg",
+      "colour": "Blue",
+      "description": "Product 2 description.",
+      "id": 2
+    },
+    {
+      "name": "Product 3",
+      "price": 24.99,
+      "category": "Category 3",
+      "image": "image_url_3.jpg",
+      "colour": "Green",
+      "description": "Product 3 description.",
+      "id": 3
+    },
+    {
+      "name": "Product 4",
+      "price": 19.99,
+      "category": "Category 1",
+      "image": "image_url_4.jpg",
+      "colour": "Yellow",
+      "description": "Product 4 description.",
+      "id": 4
+    },
+    {
+      "name": "Product 5",
+      "price": 12.99,
+      "category": "Category 2",
+      "image": "image_url_5.jpg",
+      "colour": "Purple",
+      "description": "Product 5 description.",
+      "id": 5
+    },
+    {
+      "name": "Product 6",
+      "price": 29.99,
+      "category": "Category 3",
+      "image": "image_url_6.jpg",
+      "colour": "Orange",
+      "description": "Product 6 description.",
+      "id": 6
+    },
+    {
+      "name": "Product 7",
+      "price": 7.99,
+      "category": "Category 1",
+      "image": "image_url_7.jpg",
+      "colour": "Blue",
+      "description": "Product 7 description.",
+      "id": 7
+    },
+    {
+      "name": "Product 8",
+      "price": 16.99,
+      "category": "Category 2",
+      "image": "image_url_8.jpg",
+      "colour": "Red",
+      "description": "Product 8 description.",
+      "id": 8
+    },
+    {
+      "name": "Product 9",
+      "price": 22.99,
+      "category": "Category 3",
+      "image": "image_url_9.jpg",
+      "colour": "Green",
+      "description": "Product 9 description.",
       "id": 9
     },
     {
-      "name": "",
-      "email": "",
-      "password": "",
+      "name": "Product 10",
+      "price": 11.99,
+      "category": "Category 1",
+      "image": "image_url_10.jpg",
+      "colour": "Purple",
+      "description": "Product 10 description.",
       "id": 10
     },
     {
-      "name": "shiva",
-      "email": "sia",
-      "password": "adf",
+      "name": "Product 11",
+      "price": 27.99,
+      "category": "Category 2",
+      "image": "image_url_11.jpg",
+      "colour": "Yellow",
+      "description": "Product 11 description.",
       "id": 11
+    },
+    {
+      "name": "Product 12",
+      "price": 15.99,
+      "category": "Category 3",
+      "image": "image_url_12.jpg",
+      "colour": "Orange",
+      "description": "Product 12 description.",
+      "id": 12
+    },
+    {
+      "name": "Product 13",
+      "price": 8.99,
+      "category": "Category 1",
+      "image": "image_url_13.jpg",
+      "colour": "Red",
+      "description": "Product 13 description.",
+      "id": 13
+    },
+    {
+      "name": "Product 14",
+      "price": 17.99,
+      "category": "Category 2",
+      "image": "image_url_14.jpg",
+      "colour": "Blue",
+      "description": "Product 14 description.",
+      "id": 14
+    },
+    {
+      "name": "Product 15",
+      "price": 25.99,
+      "category": "Category 3",
+      "image": "image_url_15.jpg",
+      "colour": "Green",
+      "description": "Product 15 description.",
+      "id": 15
+    },
+    {
+      "name": "Product 16",
+      "price": 13.99,
+      "category": "Category 1",
+      "image": "image_url_16.jpg",
+      "colour": "Yellow",
+      "description": "Product 16 description.",
+      "id": 16
+    },
+    {
+      "name": "Product 17",
+      "price": 21.99,
+      "category": "Category 2",
+      "image": "image_url_17.jpg",
+      "colour": "Purple",
+      "description": "Product 17 description.",
+      "id": 17
+    },
+    {
+      "name": "Product 18",
+      "price": 10.99,
+      "category": "Category 3",
+      "image": "image_url_18.jpg",
+      "colour": "Orange",
+      "description": "Product 18 description.",
+      "id": 18
+    },
+    {
+      "name": "Product 19",
+      "price": 28.99,
+      "category": "Category 1",
+      "image": "image_url_19.jpg",
+      "colour": "Red",
+      "description": "Product 19 description.",
+      "id": 19
+    },
+    {
+      "name": "Product 20",
+      "price": 18.99,
+      "category": "Category 2",
+      "image": "image_url_20.jpg",
+      "colour": "Blue",
+      "description": "Product 20 description.",
+      "id": 20
+    }
+  ],
+  "users": [
+    {
+      "name": "Shivam",
+      "email": "shivam@test.com",
+      "password": "SHIvam@123",
+      "id": 1
     }
   ]
 }

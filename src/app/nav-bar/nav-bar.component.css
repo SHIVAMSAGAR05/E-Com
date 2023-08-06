@@ -5,3 +5,31 @@
 .input-width {
     width: 500px;
 }
+
+.ecom-logo {
+    color: rgb(103, 34, 103);
+    font-weight: bold;
+    font-size: 3.5vh;
+}
+
+a {
+    cursor: pointer;
+}
+
+.search-result {
+    position: absolute;
+    display: list-item !important ;
+    z-index: 10;
+    background-color: #fff;
+    width: 500px;
+    top: 53px;
+    border: 1px solid #f7ecec;
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.search-result li {
+    padding: 10px;
+    border: 1px solid #e5e3e3a8;;
+}

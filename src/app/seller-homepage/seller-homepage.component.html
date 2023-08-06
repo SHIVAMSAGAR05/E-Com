@@ -1,1 +1,28 @@
-<p>seller-homepage works!</p>
+<div class="list-heading">
+    <h3>Products List</h3>
+</div>
+<table class="table table-hover table-responsive">
+    <thead>
+        <tr>
+            <th scope="col">Image</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Category</th>
+            <th scope="col">Description</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of productsList">
+            <td><img src="{{item.image}}" alt="product image" srcset=""></td>
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.category}}</td>
+            <td>{{item.description}}</td>
+            <button type="button" class="btn btn-danger" (click)="deleteItem(item.id)"><fa-icon [icon]="trash"></fa-icon> Delete</button>
+            <button type="button" class="btn btn-warning" routerLink="/seller-update-product/{{item.id}}" ><fa-icon [icon]="edit"></fa-icon> Edit</button>
+            
+            
+        </tr>
+    </tbody>
+</table>

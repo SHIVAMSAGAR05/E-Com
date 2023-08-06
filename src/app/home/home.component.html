@@ -1,1 +1,33 @@
-<p>home works!</p>
+<ngb-carousel *ngIf="popularImages">
+    <ng-template ngbSlide *ngFor="let item of popularImages">
+        <div class="picsum-img-wrapper home-carousal">
+            <a routerLink="/details/{{item.id}}" >
+                <img src="{{item.image}}" alt="Angular Carousel 1">
+            </a>
+        </div>
+        <div class="carousel-caption product-name">
+            <h3>{{item.name}}</h3>
+            <p style="color: wheat;">{{item.description}}</p>
+        </div>
+    </ng-template>
+</ngb-carousel>
+
+<!-- Cards for product -->
+<div class="product-item">
+    <div class="row">
+        <div class="col-sm-3" *ngFor="let product of allProducts">
+            <div class="card custom-card" style="width: 20rem;">
+                <img class="card-img-top" src="{{product.image}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{product.name}}</h5>
+                    <h6 class="card-title">{{product.price}}</h6>
+                    <p class="card-text" style="color: black;">{{product.description}}</p>
+                </div>
+                <div class="card-footer">
+                    <a routerLink="/details/{{product.id}}" class="card-link">More Info</a>
+                    <a href="#" class="card-link">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
