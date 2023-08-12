@@ -1,57 +1,122 @@
+<!-- User Sign up Form  -->
 <section class="vh-100" style="background-color: #eee; " *ngIf="!toggleForm">
-    <div class="container h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-lg-12 col-xl-11">
-          <div class="card text-black" style="border-radius: 25px;">
-            <div class="card-body p-md-5">
-              <div class="row justify-content-center">
-                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-  
-                  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">User Sign-Up</p>
-  
-                  <form class="mx-1 mx-md-4" #userSignUp="ngForm" (ngSubmit)="newUserSignUp(userSignUp.value)">
-  
-                    <div class="d-flex flex-row align-items-center mb-4">
-                      <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <input type="text" id="form3Example1c" class="form-control" ngModel name="name" />
-                        <label class="form-label" for="form3Example1c">Your Name</label>
-                      </div>
-                    </div>
-  
-                    <div class="d-flex flex-row align-items-center mb-4">
-                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <input type="email" id="form3Example3c" class="form-control" ngModel name="email" />
-                        <label class="form-label" for="form3Example3c">Your Email</label>
-                      </div>
-                    </div>
-  
-                    <div class="d-flex flex-row align-items-center mb-4">
-                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <input type="password" id="form3Example4c" class="form-control" ngModel name="password" minlength="8" required/>
-                        <label class="form-label" for="form3Example4c">Password</label>
-                      </div>
-                    </div>
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">
+        <div class="card text-black" style="border-radius: 25px;">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 
-                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                      <button class="form-button btn btn-primary">Sign Up</button>
+                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">User Sign-Up</p>
+
+                <form class="mx-1 mx-md-4" #userSignUp="ngForm" (ngSubmit)="newUserSignUp(userSignUp.value)">
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text"  class="form-control" ngModel name="name" />
+                      <label class="form-label">Your Name</label>
                     </div>
-                  </form>
-                  <h5>Already have an account ? <a class="toggle-link" (click)="openSignIn()">Login</a></h5> 
-                </div>
-              
-                <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-  
-                  <img src="https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7875.jpg?w=826&t=st=1691315145~exp=1691315745~hmac=974b39a55ea554a55b48235de35f552c2805482569b5819cbe4f67bb6334aae3"
-                    class="img-fluid" alt="Sample image">
-  
-                </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="email"  class="form-control" ngModel name="email" email #email="ngModel" required />
+                      <p style="color: red;"><span *ngIf="email.invalid && email.touched">Please enter valid email-address</span></p>
+                      <label class="form-label" >Your Email</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password"  class="form-control" ngModel name="password" #password="ngModel" required
+                        minlength="6" required />
+                        <p style="color: red;"><span *ngIf="password.invalid && password.touched">Please enter valid password </span></p>
+                      <label class="form-label" for="form3Example4c">Password</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                    <button class="form-button btn btn-primary" [disabled]="userSignUp.invalid">Sign Up</button>
+                  </div>
+                </form>
+                <h5>Already have an account ? <a class="toggle-link" (click)="openSignIn()">Login</a></h5>
+              </div>
+
+              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+                <img
+                  src="https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7875.jpg?w=826&t=st=1691315145~exp=1691315745~hmac=974b39a55ea554a55b48235de35f552c2805482569b5819cbe4f67bb6334aae3"
+                  class="img-fluid" alt="Sample image">
+
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- User Sign in Form -->
+<section class="vh-100" style="background-color: #eee; " *ngIf="toggleForm">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">
+        <div class="card text-black" style="border-radius: 25px;">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">User Sign-In</p>
+
+                <form class="mx-1 mx-md-4" #userSignIN="ngForm" (ngSubmit)="userSignIn(userSignIN.value)">
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="email" class="form-control" ngModel name="email" #email="ngModel" email
+                        required />
+                        <p style="color: red;"><span *ngIf="email.invalid && email.touched">Please enter valid email-address</span></p>
+                      <label class="form-label">Your Email</label>
+                    </div>
+                    
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password" class="form-control" ngModel name="password"
+                        minlength="6" #password="ngModel" required />
+                        <p style="color: red;"><span *ngIf="password.invalid && password.touched">Please enter correct password</span></p>
+                      <label class="form-label">Password</label>
+                    </div>
+                  </div>
+
+                  <div class="alert alert-danger" role="alert" *ngIf="showError">
+                    <span>{{authError}}</span>
+                  </div>
+
+                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                    <button class="form-button btn btn-primary" [disabled]="userSignIN.invalid">Sign In</button>
+                  </div>
+                </form>
+                <h5>Don't have an account ? <a class="toggle-link" (click)="openSignUp()">SignUp</a></h5>
+              </div>
+
+              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+                <img
+                  src="https://img.freepik.com/free-vector/login-concept-illustration_114360-757.jpg?w=826&t=st=1691821568~exp=1691822168~hmac=ee49f9795e53808a36d4807bc99858ce16240505f12fec73856dd7b8ee02fe90"
+                  class="img-fluid" alt="Sample image">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

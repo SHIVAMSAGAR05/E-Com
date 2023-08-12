@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { signUpData } from '../data-types';
+import { signInData, signUpData } from '../data-types';
 import { UserServicesService } from '../services/user-services.service';
 
 @Component({
@@ -9,10 +9,13 @@ import { UserServicesService } from '../services/user-services.service';
 })
 export class UserAuthComponent implements OnInit {
 
-  toggleForm:boolean = false;
+  toggleForm : boolean = true;
+  authError : string = '';
+  showError:boolean = false;
   constructor(private user:UserServicesService) { }
 
   ngOnInit(): void {
+    this.user.userReloadAuth();
   }
 
   newUserSignUp(data:signUpData) {
@@ -20,8 +23,22 @@ export class UserAuthComponent implements OnInit {
     this.user.userSignUP(data)
   }
 
-  openSignIn() {
+  userSignIn(data:any):void {
+    this.user.userLoginIn(data);
+    this.user.isLoginError.subscribe((isError) => {
+      if(isError){
+        this.showError = true;
+        this.authError = 'E-mail or Passoword is incorrect';
+      }
+    })
+  }
 
+  openSignIn(){
+    this.toggleForm = true;
+  }
+
+  openSignUp(){
+    this.toggleForm = false;
   }
 
 }

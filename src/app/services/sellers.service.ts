@@ -36,7 +36,7 @@ export class SellersService {
         localStorage.setItem('seller-home',JSON.stringify(result.body))
         this.router.navigate(['seller-home'])
       } else {
-        alert("User credentials doesn't match with our database")
+        // alert("User credentials doesn't match with our database")
         this.isLoginError.emit(true)
       }
     })

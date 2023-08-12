@@ -85,186 +85,6 @@
       "image": "https://softsensbaby.com/cdn/shop/files/Website_Banner_Kit.jpg?v=1669009361",
       "description": "Dynamic island notch with high performance gaming",
       "id": 5
-    },
-    {
-      "name": "Product 1",
-      "price": 9.99,
-      "category": "Category 1",
-      "image": "image_url_1.jpg",
-      "colour": "Red",
-      "description": "Product 1 description.",
-      "id": 1
-    },
-    {
-      "name": "Product 2",
-      "price": 14.99,
-      "category": "Category 2",
-      "image": "image_url_2.jpg",
-      "colour": "Blue",
-      "description": "Product 2 description.",
-      "id": 2
-    },
-    {
-      "name": "Product 3",
-      "price": 24.99,
-      "category": "Category 3",
-      "image": "image_url_3.jpg",
-      "colour": "Green",
-      "description": "Product 3 description.",
-      "id": 3
-    },
-    {
-      "name": "Product 4",
-      "price": 19.99,
-      "category": "Category 1",
-      "image": "image_url_4.jpg",
-      "colour": "Yellow",
-      "description": "Product 4 description.",
-      "id": 4
-    },
-    {
-      "name": "Product 5",
-      "price": 12.99,
-      "category": "Category 2",
-      "image": "image_url_5.jpg",
-      "colour": "Purple",
-      "description": "Product 5 description.",
-      "id": 5
-    },
-    {
-      "name": "Product 6",
-      "price": 29.99,
-      "category": "Category 3",
-      "image": "image_url_6.jpg",
-      "colour": "Orange",
-      "description": "Product 6 description.",
-      "id": 6
-    },
-    {
-      "name": "Product 7",
-      "price": 7.99,
-      "category": "Category 1",
-      "image": "image_url_7.jpg",
-      "colour": "Blue",
-      "description": "Product 7 description.",
-      "id": 7
-    },
-    {
-      "name": "Product 8",
-      "price": 16.99,
-      "category": "Category 2",
-      "image": "image_url_8.jpg",
-      "colour": "Red",
-      "description": "Product 8 description.",
-      "id": 8
-    },
-    {
-      "name": "Product 9",
-      "price": 22.99,
-      "category": "Category 3",
-      "image": "image_url_9.jpg",
-      "colour": "Green",
-      "description": "Product 9 description.",
-      "id": 9
-    },
-    {
-      "name": "Product 10",
-      "price": 11.99,
-      "category": "Category 1",
-      "image": "image_url_10.jpg",
-      "colour": "Purple",
-      "description": "Product 10 description.",
-      "id": 10
-    },
-    {
-      "name": "Product 11",
-      "price": 27.99,
-      "category": "Category 2",
-      "image": "image_url_11.jpg",
-      "colour": "Yellow",
-      "description": "Product 11 description.",
-      "id": 11
-    },
-    {
-      "name": "Product 12",
-      "price": 15.99,
-      "category": "Category 3",
-      "image": "image_url_12.jpg",
-      "colour": "Orange",
-      "description": "Product 12 description.",
-      "id": 12
-    },
-    {
-      "name": "Product 13",
-      "price": 8.99,
-      "category": "Category 1",
-      "image": "image_url_13.jpg",
-      "colour": "Red",
-      "description": "Product 13 description.",
-      "id": 13
-    },
-    {
-      "name": "Product 14",
-      "price": 17.99,
-      "category": "Category 2",
-      "image": "image_url_14.jpg",
-      "colour": "Blue",
-      "description": "Product 14 description.",
-      "id": 14
-    },
-    {
-      "name": "Product 15",
-      "price": 25.99,
-      "category": "Category 3",
-      "image": "image_url_15.jpg",
-      "colour": "Green",
-      "description": "Product 15 description.",
-      "id": 15
-    },
-    {
-      "name": "Product 16",
-      "price": 13.99,
-      "category": "Category 1",
-      "image": "image_url_16.jpg",
-      "colour": "Yellow",
-      "description": "Product 16 description.",
-      "id": 16
-    },
-    {
-      "name": "Product 17",
-      "price": 21.99,
-      "category": "Category 2",
-      "image": "image_url_17.jpg",
-      "colour": "Purple",
-      "description": "Product 17 description.",
-      "id": 17
-    },
-    {
-      "name": "Product 18",
-      "price": 10.99,
-      "category": "Category 3",
-      "image": "image_url_18.jpg",
-      "colour": "Orange",
-      "description": "Product 18 description.",
-      "id": 18
-    },
-    {
-      "name": "Product 19",
-      "price": 28.99,
-      "category": "Category 1",
-      "image": "image_url_19.jpg",
-      "colour": "Red",
-      "description": "Product 19 description.",
-      "id": 19
-    },
-    {
-      "name": "Product 20",
-      "price": 18.99,
-      "category": "Category 2",
-      "image": "image_url_20.jpg",
-      "colour": "Blue",
-      "description": "Product 20 description.",
-      "id": 20
     }
   ],
   "users": [
@@ -273,6 +93,19 @@
       "email": "shivam@test.com",
       "password": "SHIvam@123",
       "id": 1
+    },
+    {
+      "name": "Carnage",
+      "email": "carnage@user.com",
+      "password": "abc@123",
+      "id": 3
+    },
+  
+    {
+      "name": "Shivam Sagar",
+      "email": "shivam.sagar.shivam@gmail.com",
+      "password": "abc@123",
+      "id": 6
     }
   ]
 }

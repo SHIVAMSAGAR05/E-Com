@@ -12,22 +12,29 @@ export class NavBarComponent implements OnInit {
 
   menuType : string = 'default'
   sellerName:string = '';
+  userName:string = '';
   searchResult:undefined | product[];
   constructor(private router:Router, private product : AddProductService) { }
 
   ngOnInit(): void {
     this.router.events.subscribe((val:any) => {
       if(val.url){
-        console.log(val)
-        if(localStorage.getItem('seller-home') && val.url.includes('seller')){
+        // console.log(val)
+        if(localStorage.getItem('seller-home') && val.url.includes('seller')) {
           // console.log("In Seller Zone");
           this.menuType = 'seller';
-          if(localStorage.getItem('seller-home')){
             let sellerStore = localStorage.getItem('seller-home');
             let sellerData = sellerStore && JSON.parse(sellerStore)[0];
             this.sellerName = sellerData.name;
           }
-        }
+          // console.log("In User Zone");
+          else if(localStorage.getItem('users')) {
+            let userStore = localStorage.getItem('users');
+            let userData = userStore && JSON.parse(userStore);
+            this.userName = userData.name;
+            // console.warn(this.userName);
+            this.menuType = 'user';
+          }
         else {
           // console.log("Outside seller zone");
           this.menuType = 'default';
@@ -36,9 +43,13 @@ export class NavBarComponent implements OnInit {
     })
   }
 
-  selllerLogOut(){
+  sellerLogOut() {
     localStorage.removeItem('seller-home');
     this.router.navigate(['home'])
+  }
+  userLogout() {
+    localStorage.removeItem('users');
+    this.router.navigate((['home']));
   }
 
   searchFunction(query : KeyboardEvent) {

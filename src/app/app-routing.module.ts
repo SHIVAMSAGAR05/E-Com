@@ -55,10 +55,10 @@ const routes: Routes = [
     path: 'details/:productId'
   },
   //Error Handling page 404
-  {
-    component:ErrorPageComponent,
-    path:"**"
-  }
+  // {
+  //   component:ErrorPageComponent,
+  //   path:"**"
+  // }
   
 ];
 
